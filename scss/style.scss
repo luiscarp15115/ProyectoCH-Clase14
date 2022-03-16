@@ -1,0 +1,43 @@
+*{
+    font-family: Helvetica, Arial, sans-serif;
+}
+@import "_barnav";
+
+body{
+    background-color:rgb(245, 245, 245) ;
+}
+.grid-index{
+    display: grid;
+    grid-template-areas: 
+    "encabezado"
+    "mennu"
+    "banner"
+    "pie" ;
+}
+.header{
+    grid-area: encabezado;
+    .header__logo{
+        display: flex; 
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+.banner{
+    width: 100%;
+    grid-area: banner;
+    .banner__img{
+        width: 100%;
+    }
+}
+
+.footer{
+    background-color: #424242;
+    grid-area: pie;
+    color: white;
+    height: 10vh;
+    display: flex;
+    align-content:center;
+    justify-content:center;
+    align-items: center;
+}

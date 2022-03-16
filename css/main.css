@@ -1,0 +1,90 @@
+* {
+  font-family: Helvetica, Arial, sans-serif; }
+
+.nav {
+  grid-area: mennu;
+  display: flex;
+  align-content: center;
+  justify-content: center; }
+  .nav .nav__menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0; }
+    @media screen and (max-width: 750px) {
+      .nav .nav__menu {
+        flex-direction: column;
+        width: 100%; } }
+    @media screen and (max-width: 500px) {
+      .nav .nav__menu {
+        flex-direction: column;
+        width: 100%; } }
+    .nav .nav__menu .nav__links {
+      background-color: white;
+      border: solid 2px #c2c1c1;
+      display: inline-flex;
+      height: 40px;
+      margin: 3px; }
+      @media screen and (max-width: 750px) {
+        .nav .nav__menu .nav__links {
+          justify-content: center;
+          justify-items: center; } }
+      @media screen and (max-width: 500px) {
+        .nav .nav__menu .nav__links {
+          justify-content: center;
+          justify-items: center; } }
+      .nav .nav__menu .nav__links .nav__link {
+        display: inline-flex;
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 3px 33px;
+        align-items: center; }
+        .nav .nav__menu .nav__links .nav__link:hover {
+          color: white !important; }
+
+.conf-nav, .bckgnav--color1:hover, .bckgnav--color2:hover, .bckgnav--color3:hover, .bckgnav--colorletra:hover {
+  border: solid 1px black;
+  transform: scale(1.1); }
+
+:hover.bckgnav--color1 {
+  background-color: #646464 !important; }
+
+:hover.bckgnav--color2 {
+  background-color: #aaaaaa !important; }
+
+:hover.bckgnav--color3 {
+  background-color: #dfd9d9 !important; }
+
+:hover.bckgnav--colorletra {
+  background-color: white !important; }
+
+body {
+  background-color: whitesmoke; }
+
+.grid-index {
+  display: grid;
+  grid-template-areas: "encabezado" "mennu" "banner" "pie"; }
+
+.header {
+  grid-area: encabezado; }
+  .header .header__logo {
+    display: flex;
+    align-content: center;
+    justify-content: center; }
+
+.banner {
+  width: 100%;
+  grid-area: banner; }
+  .banner .banner__img {
+    width: 100%; }
+
+.footer {
+  background-color: #424242;
+  grid-area: pie;
+  color: white;
+  height: 10vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center; }
